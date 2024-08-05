@@ -1,3 +1,8 @@
+### Tecnologias usadas
+1. Fastify https://fastify.dev/ => Framework para criar a API
+2. Typescript => A linguaguem de programação
+3. Node => Plataforma que executa o Typescript/Javascript
+
 ### Dependencias
 
 1. Instalar o **node** (ferramenta que permite executar código js/ts): https://nodejs.org/pt
