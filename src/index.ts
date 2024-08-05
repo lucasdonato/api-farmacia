@@ -20,6 +20,17 @@ server.get('/remedios/:id', async (request: FastifyRequest, reply: FastifyReply)
   reply.status(404).send({ error: 'Remedio não encontrado' })
 })
 
+server.get('/remedios/search', async (request: FastifyRequest) => {
+  const { nome } = request.query as { nome?: string }
+
+  if (!nome) return { error: 'Parâmetro de consulta q é necessário' }
+
+  const descricaoFiltrada = remedios.filter(
+    (f) => f.nome_remedio.toLowerCase() === nome.toLowerCase(),
+  )
+  return descricaoFiltrada
+})
+
 server
   .listen({
     host: '0.0.0.0',
