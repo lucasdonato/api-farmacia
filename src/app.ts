@@ -1,14 +1,14 @@
 import type { FastifyReply } from 'fastify'
 import { server } from './server'
-import * as bd from './mock-consultas-banco-dados'
+import * as mockbd from './mocks/banco-de-dados'
 
 // Rota para listar todos os remédios
-server.get('/remedios', async () => bd.listarTodosRemedios())
+server.get('/remedios', async () => mockbd.listarTodosRemedios())
 
 // Rota para buscar remédio por ID
 server.get('/remedios/:id', async (request, reply: FastifyReply) => {
   const id = (request.params as { id: string }).id
-  const remedio = bd.procurarRemediosPeloID(id)
+  const remedio = mockbd.procurarRemediosPeloID(id)
 
   if (remedio) return remedio
 
@@ -24,5 +24,5 @@ server.get('/remedios/pesquisar', async (request, reply: FastifyReply) => {
     return
   }
 
-  return bd.procurarRemediosPeloNome(nome)
+  return mockbd.procurarRemediosPeloNome(nome)
 })

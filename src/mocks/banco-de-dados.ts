@@ -1,4 +1,4 @@
-import remedios from './mock/remedios.json'
+import remedios from './remedios.json'
 
 export const procurarRemediosPeloID = (id: string) =>
   remedios.find((r) => r.id === Number.parseInt(id, 10))
