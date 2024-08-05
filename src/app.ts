@@ -1,31 +1,43 @@
 import type { FastifyReply, FastifyRequest } from 'fastify'
 import { server } from './server'
-import remedios from './mock/remedios.json'
+import * as bd from './mock-consultas-banco-dados'
 
+// Tipo para parâmetros da rota
 interface ParamsRequest {
   id: string
 }
 
-server.get('/remedios', async () => {
-  return remedios
-})
+// Tipo para parâmetros de consulta
+interface QueryRequest {
+  nome?: string
+}
 
-server.get('/remedios/:id', async (request: FastifyRequest, reply: FastifyReply) => {
-  const { id } = request.params as ParamsRequest
-  const remedio = remedios.find((r) => r.id === Number.parseInt(id, 10))
+// Rota para listar todos os remédios
+server.get('/remedios', async () => bd.listarTodosRemedios())
 
-  if (remedio) return remedio
+// Rota para buscar remédio por ID
+server.get(
+  '/remedios/:id',
+  async (request: FastifyRequest<{ Params: ParamsRequest }>, reply: FastifyReply) => {
+    const remedio = bd.procurarRemediosPeloID(request.params.id)
 
-  reply.status(404).send({ error: 'Remedio não encontrado' })
-})
+    if (remedio) return remedio
 
-server.get('/remedios/search', async (request: FastifyRequest) => {
-  const { nome } = request.query as { nome?: string }
+    reply.status(404).send({ error: 'Remédio não encontrado' })
+  },
+)
 
-  if (!nome) return { error: 'Parâmetro de consulta q é necessário' }
+// Rota para buscar remédio pelo nome
+server.get(
+  '/remedios/pesquisar',
+  async (request: FastifyRequest<{ Querystring: QueryRequest }>, reply: FastifyReply) => {
+    const { nome } = request.query
 
-  const descricaoFiltrada = remedios.filter(
-    (f) => f.nome_remedio.toLowerCase() === nome.toLowerCase(),
-  )
-  return descricaoFiltrada
-})
+    if (!nome) {
+      reply.status(400).send({ error: 'Parâmetro de consulta nome é necessário' })
+      return
+    }
+
+    return bd.procurarRemediosPeloNome(nome)
+  },
+)
