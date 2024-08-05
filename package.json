@@ -1,11 +1,10 @@
 {
 	"name": "api-farmacia",
 	"version": "1.0.0",
-	"description": "Api farmacia",
+	"description": "Backend Projeto Farmacia Fernando Key",
 	"main": "index.js",
 	"scripts": {
-		"start:dev": "tsx watch src/app.ts",
-		"biome:format": "npx @biomejs/biome check --write src/"
+		"start:dev": "tsx watch src/app.ts"
 	},
 	"keywords": [],
 	"author": "Lucas Donato",
@@ -16,7 +15,6 @@
 		"typescript": "^4.9.5"
 	},
 	"dependencies": {
-		"fastify": "^4.27.0",
-		"zod": "^3.23.8"
+		"fastify": "^4.27.0"
 	}
 }
