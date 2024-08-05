@@ -4,7 +4,7 @@
 	"description": "Api farmacia",
 	"main": "index.js",
 	"scripts": {
-		"start:dev": "tsx watch src/index.ts",
+		"start:dev": "tsx watch src/app.ts",
 		"biome:format": "npx @biomejs/biome check --write src/"
 	},
 	"keywords": [],

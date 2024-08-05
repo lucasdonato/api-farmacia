@@ -1,7 +1,6 @@
-import fastify, { type FastifyReply, type FastifyRequest } from 'fastify'
+import type { FastifyReply, FastifyRequest } from 'fastify'
+import { server } from './server'
 import remedios from './mock/remedios.json'
-
-const server = fastify({ logger: true })
 
 interface ParamsRequest {
   id: string
@@ -30,12 +29,3 @@ server.get('/remedios/search', async (request: FastifyRequest) => {
   )
   return descricaoFiltrada
 })
-
-server
-  .listen({
-    host: '0.0.0.0',
-    port: 8080,
-  })
-  .then(() => {
-    console.log('🚀 HTTP Server Running!')
-  })
