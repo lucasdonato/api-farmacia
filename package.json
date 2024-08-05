@@ -1,0 +1,22 @@
+{
+	"name": "api-farmacia",
+	"version": "1.0.0",
+	"description": "Api farmacia",
+	"main": "index.js",
+	"scripts": {
+		"start:dev": "tsx watch src/index.ts",
+		"biome:format": "npx @biomejs/biome check --write src/"
+	},
+	"keywords": [],
+	"author": "Lucas Donato",
+	"license": "ISC",
+	"devDependencies": {
+		"@types/node": "^18.19.33",
+		"tsx": "^4.10.5",
+		"typescript": "^4.9.5"
+	},
+	"dependencies": {
+		"fastify": "^4.27.0",
+		"zod": "^3.23.8"
+	}
+}

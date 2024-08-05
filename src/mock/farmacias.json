@@ -1,0 +1,330 @@
+[
+	{
+		"id": 1000,
+		"nome_remedio": "Paracetamol",
+		"quantidade": 100,
+		"tarja": "Sem Tarja",
+		"exige_receita": false,
+		"preco": 10.5
+	},
+	{
+		"id": 1001,
+		"nome_remedio": "Ibuprofeno",
+		"quantidade": 50,
+		"tarja": "Sem Tarja",
+		"exige_receita": false,
+		"preco": 15.0
+	},
+	{
+		"id": 1002,
+		"nome_remedio": "Amoxicilina",
+		"quantidade": 200,
+		"tarja": "Amarela",
+		"exige_receita": true,
+		"preco": 25.0
+	},
+	{
+		"id": 1003,
+		"nome_remedio": "Dipirona",
+		"quantidade": 150,
+		"tarja": "Sem Tarja",
+		"exige_receita": false,
+		"preco": 8.9
+	},
+	{
+		"id": 1004,
+		"nome_remedio": "Losartana",
+		"quantidade": 75,
+		"tarja": "Amarela",
+		"exige_receita": true,
+		"preco": 22.5
+	},
+	{
+		"id": 1005,
+		"nome_remedio": "Simvastatina",
+		"quantidade": 80,
+		"tarja": "Amarela",
+		"exige_receita": true,
+		"preco": 30.0
+	},
+	{
+		"id": 1006,
+		"nome_remedio": "Omeprazol",
+		"quantidade": 60,
+		"tarja": "Amarela",
+		"exige_receita": true,
+		"preco": 18.0
+	},
+	{
+		"id": 1007,
+		"nome_remedio": "Captopril",
+		"quantidade": 40,
+		"tarja": "Amarela",
+		"exige_receita": true,
+		"preco": 20.0
+	},
+	{
+		"id": 1008,
+		"nome_remedio": "Atenolol",
+		"quantidade": 120,
+		"tarja": "Amarela",
+		"exige_receita": true,
+		"preco": 15.0
+	},
+	{
+		"id": 1009,
+		"nome_remedio": "Clonazepam",
+		"quantidade": 30,
+		"tarja": "Preta",
+		"exige_receita": true,
+		"preco": 45.0
+	},
+	{
+		"id": 1010,
+		"nome_remedio": "Risperidona",
+		"quantidade": 25,
+		"tarja": "Preta",
+		"exige_receita": true,
+		"preco": 60.0
+	},
+	{
+		"id": 1011,
+		"nome_remedio": "Prednisona",
+		"quantidade": 70,
+		"tarja": "Sem Tarja",
+		"exige_receita": false,
+		"preco": 12.0
+	},
+	{
+		"id": 1012,
+		"nome_remedio": "Metformina",
+		"quantidade": 90,
+		"tarja": "Amarela",
+		"exige_receita": true,
+		"preco": 16.0
+	},
+	{
+		"id": 1013,
+		"nome_remedio": "Loratadina",
+		"quantidade": 110,
+		"tarja": "Sem Tarja",
+		"exige_receita": false,
+		"preco": 7.5
+	},
+	{
+		"id": 1014,
+		"nome_remedio": "Cetirizina",
+		"quantidade": 85,
+		"tarja": "Sem Tarja",
+		"exige_receita": false,
+		"preco": 9.0
+	},
+	{
+		"id": 1015,
+		"nome_remedio": "Levotiroxina",
+		"quantidade": 65,
+		"tarja": "Amarela",
+		"exige_receita": true,
+		"preco": 23.0
+	},
+	{
+		"id": 1016,
+		"nome_remedio": "Bromazepam",
+		"quantidade": 50,
+		"tarja": "Preta",
+		"exige_receita": true,
+		"preco": 35.0
+	},
+	{
+		"id": 1017,
+		"nome_remedio": "Diazepam",
+		"quantidade": 40,
+		"tarja": "Preta",
+		"exige_receita": true,
+		"preco": 28.0
+	},
+	{
+		"id": 1018,
+		"nome_remedio": "Amitriptilina",
+		"quantidade": 55,
+		"tarja": "Preta",
+		"exige_receita": true,
+		"preco": 32.0
+	},
+	{
+		"id": 1019,
+		"nome_remedio": "Alprazolam",
+		"quantidade": 45,
+		"tarja": "Preta",
+		"exige_receita": true,
+		"preco": 33.0
+	},
+	{
+		"id": 1020,
+		"nome_remedio": "Furosemida",
+		"quantidade": 70,
+		"tarja": "Sem Tarja",
+		"exige_receita": false,
+		"preco": 10.0
+	},
+	{
+		"id": 1021,
+		"nome_remedio": "Diclofenaco",
+		"quantidade": 60,
+		"tarja": "Sem Tarja",
+		"exige_receita": false,
+		"preco": 12.5
+	},
+	{
+		"id": 1022,
+		"nome_remedio": "Ciprofloxacino",
+		"quantidade": 90,
+		"tarja": "Amarela",
+		"exige_receita": true,
+		"preco": 24.0
+	},
+	{
+		"id": 1023,
+		"nome_remedio": "Enalapril",
+		"quantidade": 80,
+		"tarja": "Amarela",
+		"exige_receita": true,
+		"preco": 18.5
+	},
+	{
+		"id": 1024,
+		"nome_remedio": "Azitromicina",
+		"quantidade": 50,
+		"tarja": "Amarela",
+		"exige_receita": true,
+		"preco": 27.0
+	},
+	{
+		"id": 1025,
+		"nome_remedio": "Fluoxetina",
+		"quantidade": 100,
+		"tarja": "Preta",
+		"exige_receita": true,
+		"preco": 29.0
+	},
+	{
+		"id": 1026,
+		"nome_remedio": "Sertralina",
+		"quantidade": 65,
+		"tarja": "Preta",
+		"exige_receita": true,
+		"preco": 31.0
+	},
+	{
+		"id": 1027,
+		"nome_remedio": "Lorazepam",
+		"quantidade": 40,
+		"tarja": "Preta",
+		"exige_receita": true,
+		"preco": 28.0
+	},
+	{
+		"id": 1028,
+		"nome_remedio": "Escitalopram",
+		"quantidade": 75,
+		"tarja": "Preta",
+		"exige_receita": true,
+		"preco": 35.0
+	},
+	{
+		"id": 1029,
+		"nome_remedio": "Propranolol",
+		"quantidade": 90,
+		"tarja": "Amarela",
+		"exige_receita": true,
+		"preco": 14.0
+	},
+	{
+		"id": 1030,
+		"nome_remedio": "Carbamazepina",
+		"quantidade": 60,
+		"tarja": "Preta",
+		"exige_receita": true,
+		"preco": 26.0
+	},
+	{
+		"id": 1031,
+		"nome_remedio": "Gabapentina",
+		"quantidade": 55,
+		"tarja": "Preta",
+		"exige_receita": true,
+		"preco": 33.0
+	},
+	{
+		"id": 1032,
+		"nome_remedio": "Lamotrigina",
+		"quantidade": 70,
+		"tarja": "Preta",
+		"exige_receita": true,
+		"preco": 38.0
+	},
+	{
+		"id": 1033,
+		"nome_remedio": "Ranitidina",
+		"quantidade": 85,
+		"tarja": "Sem Tarja",
+		"exige_receita": false,
+		"preco": 14.0
+	},
+	{
+		"id": 1034,
+		"nome_remedio": "Espironolactona",
+		"quantidade": 90,
+		"tarja": "Amarela",
+		"exige_receita": true,
+		"preco": 22.0
+	},
+	{
+		"id": 1035,
+		"nome_remedio": "Claritromicina",
+		"quantidade": 40,
+		"tarja": "Amarela",
+		"exige_receita": true,
+		"preco": 29.0
+	},
+	{
+		"id": 1036,
+		"nome_remedio": "Verapamil",
+		"quantidade": 65,
+		"tarja": "Amarela",
+		"exige_receita": true,
+		"preco": 20.0
+	},
+	{
+		"id": 1037,
+		"nome_remedio": "Diltiazem",
+		"quantidade": 55,
+		"tarja": "Amarela",
+		"exige_receita": true,
+		"preco": 23.0
+	},
+	{
+		"id": 1038,
+		"nome_remedio": "Nitrofurantoina",
+		"quantidade": 75,
+		"tarja": "Amarela",
+		"exige_receita": true,
+		"preco": 27.0
+	},
+	{
+		"id": 1039,
+		"nome_remedio": "Tansulosina",
+		"quantidade": 60,
+		"tarja": "Amarela",
+		"exige_receita": true,
+		"preco": 25.0
+	},
+	{
+		"id": 1040,
+		"nome_remedio": "Rosuvastatina",
+		"quantidade": 80,
+		"tarja": "Amarela",
+		"exige_receita": true,
+		"preco": 31.0
+	}
+]
